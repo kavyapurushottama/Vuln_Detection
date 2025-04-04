@@ -19,13 +19,13 @@ A web-based vulnerability scanner that combines **static analysis (Bandit)**, **
 Here are some snapshots of the project:  
 
 ### **Vulnerability Scanner**  
-![Dashboard](static/images/Dashboard.png)  
+![Scanner](screenshots/VulnScanner.png)  
 
 ### **Reports (Website)**  
-![Expenses](static/images/Expenses.png)  
+![Reports1](screenshots/ReportWeb.png)  
 
 ### **Reports (File)**  
-![Expenses](static/images/Expenses.png)  
+![reports2](screenshots/ReportFile.png)  
 
 ---
 
