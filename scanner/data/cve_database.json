@@ -1,0 +1,72 @@
+[
+    {
+        "id": "CVE-2021-42574",
+        "description": "Command Injection Vulnerability",
+        "patterns": [
+            "os\\.system\\(.*\\)",
+            "subprocess\\.call\\(.*\\)",
+            "subprocess\\.Popen\\(.*\\)",
+            "eval\\(.*\\)",
+            "exec\\(.*\\)",
+            "telnetlib\\.Telnet\\(.*\\)",
+            "ftplib\\.FTP\\(.*\\)"
+        ],
+        "cvss_score": "9.8",
+        "risk": "High"
+    },
+    {
+        "id": "CVE-2021-23727",
+        "description": "SQL Injection Vulnerability",
+        "patterns": [
+            "execute\\(.*\\%.*\\)",
+            "raw_input\\(.*\\)",
+            "input\\(.*\\)",
+            "cursor\\.execute\\(.*\\+.*\\)",
+            "mysql\\.connector\\.connect\\(.*\\)",
+            "sqlite3\\.connect\\(.*\\)"
+        ],
+        "cvss_score": "6.5",
+        "risk": "Moderate"
+    },
+    {
+        "id": "CVE-2021-29921",
+        "description": "File Inclusion & Path Traversal",
+        "patterns": [
+            "open\\(.*\\)",
+            "file\\(.*\\)",
+            "__import__\\(.*\\)",
+            "\\.\\./",
+            "readline\\(.*\\)",
+            "pickle\\.load\\(.*\\)",
+            "yaml\\.load\\(.*\\)"
+        ],
+        "cvss_score": "3.5",
+        "risk": "Low"
+    },
+    {
+        "id": "CVE-2022-28041",
+        "description": "Cryptographic Issues",
+        "patterns": [
+            "md5\\(.*\\)",
+            "sha1\\(.*\\)",
+            "random\\.",
+            "hashlib\\.md5\\(.*\\)",
+            "hashlib\\.sha1\\(.*\\)"
+        ],
+        "cvss_score": "5.5",
+        "risk": "Moderate"
+    },
+    {
+        "id": "CVE-2022-35405",
+        "description": "Insecure Network Communication",
+        "patterns": [
+            "http://",
+            "ftp://",
+            "requests\\.get\\(.*verify=False.*\\)",
+            "ssl\\.CERT_NONE",
+            "ssl\\.PROTOCOL_TLSv1"
+        ],
+        "cvss_score": "8.2",
+        "risk": "High"
+    }
+]

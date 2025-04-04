@@ -1,0 +1,19 @@
+skips: []
+exclude_dirs: []
+tests:
+  - B102  # exec_used
+  - B103  # set_bad_file_permissions
+  - B201  # flask_debug_true
+  - B301  # pickle
+  - B324  # hashlib_new_insecure_functions
+  - B501  # request_with_no_cert_validation
+  - B506  # yaml_load
+  - B601  # paramiko_calls
+  - B602  # subprocess_popen_with_shell_equals_true
+  - B603  # subprocess_without_shell_equals_true
+  - B605  # start_process_with_a_shell
+  - B607  # start_process_with_partial_path
+  - B608  # hardcoded_sql_expressions
+  - B701  # jinja2_autoescape_false
+  - B702  # use_of_mako_templates
+  - B703  # django_mark_safe
