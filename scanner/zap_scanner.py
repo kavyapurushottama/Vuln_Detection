@@ -24,6 +24,7 @@ def validate_url(url: str) -> bool:
         return False
 
 def start_zap_daemon() -> bool:
+    zap_jar = download_zap_if_needed()
     try:
         # Kill any existing ZAP processes
         try:
