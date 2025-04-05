@@ -3,7 +3,18 @@ import time
 import os
 import subprocess
 from urllib.parse import urlparse
-from typing import Optional, Dict, Any
+from typing import Optional
+import requests
+
+def download_zap_if_needed():
+    zap_path = "zap-2.16.0.jar"
+    if not os.path.exists(zap_path):
+        print("Downloading ZAP...")
+        url = "https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2.16.0.jar"
+        r = requests.get(url)
+        with open(zap_path, 'wb') as f:
+            f.write(r.content)
+    return zap_path
 
 def validate_url(url: str) -> bool:
     try:

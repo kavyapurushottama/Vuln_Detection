@@ -22,7 +22,7 @@ app = Flask(__name__,
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 app.config['UPLOAD_FOLDER'] = str(UPLOAD_FOLDER)
 app.config['REPORTS_FOLDER'] = str(REPORTS_FOLDER)
-
+                                                
 # Create necessary directories
 UPLOAD_FOLDER.mkdir(exist_ok=True)
 REPORTS_FOLDER.mkdir(exist_ok=True, parents=True)

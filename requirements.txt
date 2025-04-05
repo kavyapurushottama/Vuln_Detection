@@ -5,12 +5,10 @@ python-owasp-zap-v2.4==0.0.20
 
 # Web framework and templating
 Flask==2.3.3
-Jinja2==3.1.2
 
 # Utility packages
 requests==2.31.0
 python-dateutil==2.8.2
-pathlib==1.0.1
 
-# Security packages
-cryptography==41.0.3
+# WSGI server for Render
+gunicorn==22.0.0
